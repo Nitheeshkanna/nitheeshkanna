@@ -43,23 +43,32 @@ print("**Thank you for visiting out Shope** ")
 print("--------------------------------------------------------------------------------------------------------------")
 print("**Please Fill your Details Below for MemberShip **")
 print("--------------------------------------------------------------------------------------------------------------")
-n= int(input("Enter a no of Account want to create:"))
-for i in range(n):
-    n=input("Enter a name:")
-    a=input("Enter your Address:")
-    ph=int(input("Enter a Phone no:"))
-    print("Name :",n)
-    print("Address :",a)
-    print("Phone No :",ph)
-    print("**Thank you for creating Membership**")
-    print()
-    p=100
-    for i in tqdm (range (p),desc="Loading…"):
-        time.sleep(0.01)
-    print()
-    print("\t--This is your \"Big Bazaar\""," ","No:","\'*",ph,"002*\'--",sep="")
+
+w=input("Do you Want Create BIG BAZAAR MemberShip Account:y/n:")
+if w=='y' or w=='Y':
+    n= int(input("Enter a no of Account want to create:"))
+    for i in range(n):
+        n=input("Enter a name:")
+        a=input("Enter your Address:")
+        ph=int(input("Enter a Phone no:"))
+        print("Name :",n)
+        print("Address :",a)
+        print("Phone No :",ph)
+        print("**Thank you for creating Membership**")
+        print()
+        p=100
+        for i in tqdm (range (p),desc="Loading…"):
+            time.sleep(0.01)
+        print()
+        print("\t--This is your \"Big Bazaar\""," ","No:","\'*",ph,"002*\'--",sep="")
+        print()
+        print("From your next \"Big Bazaar\" purchase point added on your Membership Card ")
+        print(" \t \t********** ")
+        print("\t #Thank You ","Mr/Ms/Mrs.",n,"#",sep="")
+        print("\t \t #Welcome...#")
+else:
     print()
     print("From your next \"Big Bazaar\" purchase point added on your Membership Card ")
     print(" \t \t********** ")
-    print("\t #Thank You ","Mr/Mrs.",n,"#",sep="")
+    print("\t #Thank You ","Mr/Ms/Mrs","#")
     print("\t \t #Welcome...#")
