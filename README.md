@@ -15,6 +15,11 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+from tqdm import tqdm
+import time
+n=100
+for i in tqdm (range (n),desc="Loading…"):
+    time.sleep(0.01)
 print("Welcome To ") 
 print(" \t \"Big Bazaar\" Shop")
 tot=[]
