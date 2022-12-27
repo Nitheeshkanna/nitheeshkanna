@@ -40,8 +40,10 @@ while c < 3:
         print("---Total Bill is :",k,"---")
         break
 print("**Thank you for visiting out Shope** ")
+print()
 print("**Please Fill your details for MemberShip **")
-n= int(input("Enter a no of Account create:"))
+print()
+n= int(input("Enter a no of Account want to create:"))
 for i in range(n):
     n=input("Enter a name:")
     a=input("Enter your Address:")
