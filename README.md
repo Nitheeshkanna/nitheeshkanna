@@ -1,20 +1,3 @@
-### Hi there 👋
-
-<!--
-**Nitheeshkanna/nitheeshkanna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
 from tqdm import tqdm
 import time
 n=100
@@ -45,11 +28,15 @@ while c < 3:
         print("Sorry Sir/Mam your product is not available ")
         print("Please select any other iteam you want")
         c=c+1
+        
     m=input("Do you want continue your purchase:y/n:")
 
     if  m=='y' or m=='Y':
           continue
     else:
+        p=50
+        for i in tqdm (range (p),desc="Loading…"):
+            time.sleep(0.01)
         print("---Total Bill is :",k,"---")
         break
 print("**Thank you for visiting out Shope** ")
@@ -63,6 +50,14 @@ for i in range(n):
     print("Address :",a)
     print("Phone No :",ph)
     print("**Thank you for creating Membership**")
-    print("\t--This is your \"Big Bazaar\"",",","\'*",ph,"002*\'--",sep="")
-    print("From your next \"Big Bazaar\" purchase point added on it ")
-    print(" \t********** ")
+    print()
+    p=100
+    for i in tqdm (range (p),desc="Loading…"):
+        time.sleep(0.01)
+    print()
+    print("\t--This is your \"Big Bazaar\""," ","No:","\'*",ph,"002*\'--",sep="")
+    print()
+    print("From your next \"Big Bazaar\" purchase point added on your Membership Card ")
+    print(" \t \t********** ")
+    print("\t #Thank You ","Mr/Mrs.",n,"#",sep="")
+    print("\t \t #Welcome...#")
